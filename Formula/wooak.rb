@@ -1,8 +1,8 @@
 class Wooak < Formula
   desc "A simple terminal UI for managing SSH connections"
   homepage "https://github.com/aryasoni98/wooak"
-  url "https://github.com/aryasoni98/wooak/archive/v0.0.1.tar.gz"
-  sha256 "ccd4708b8783366e23ba940d978be7fd21d8e9cbb9e0bbc92cf6868204b0f639"
+  url "https://github.com/aryasoni98/wooak/archive/v0.0.2.tar.gz"
+  sha256 "ad4e841246e8c620673be7e381c4e44cac895213bed8b0a00924d73ce4873cc9"
   license "MIT"
   head "https://github.com/aryasoni98/wooak.git", branch: "master"
 
@@ -13,6 +13,6 @@ class Wooak < Formula
   end
 
   test do
-    system "#{bin}/wooak", "--version"
+    assert_match "Wooak version", shell_output("#{bin}/wooak --version")
   end
 end
