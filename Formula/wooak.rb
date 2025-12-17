@@ -3,7 +3,7 @@ class Wooak < Formula
   homepage "https://github.com/aryasoni98/wooak"
   url "https://github.com/aryasoni98/wooak/archive/v0.0.2.tar.gz"
   sha256 "ad4e841246e8c620673be7e381c4e44cac895213bed8b0a00924d73ce4873cc9"
-  license "MIT"
+  license "Apache-2.0"
   head "https://github.com/aryasoni98/wooak.git", branch: "master"
 
   depends_on "go" => :build
